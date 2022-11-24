@@ -27,12 +27,11 @@
     <?php endfor ?>
 
     <h1>Exercice 4</h1>
-    <?=$n1 = -5;?>
-    <?=$n2 = 10;?>
-    <?php 
+    <?php $n1 = -5;
+    $n2 = 10;?>
     
-    echo "<p>La valeur absolue de ".$n1." vaut ".abs($n1);
-    echo "<p>La valeur absolue de ".$n2." vaut ".abs($n2);
-
+    <p>La valeur absolue de <?=$n1?> vaut <?=abs($n1)?></p>
+    <p>La valeur absolue de <?=$n2?> vaut <?=abs($n2)?></p>
+    
 </body>
 </html>
