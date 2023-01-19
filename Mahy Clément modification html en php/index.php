@@ -1,5 +1,12 @@
 <?php
     require_once "databaseConnexion.php";
+
+    $sth = $pdo->prepare("select * from biens");
+    $sth->execute();
+
+    print("Récupération de toutes les lignes d'un jeu de résultats :\n");
+    $result = $sth->fetchAll(PDO::FETCH_OBJ);
+    print_r($result);
 ?>
 <!DOCTYPE html>
 <html lang="fr">
