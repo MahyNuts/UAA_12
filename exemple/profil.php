@@ -1,6 +1,3 @@
-<?php
-    require_once "Config/databaseConnexion.php";
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -9,22 +6,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/animation.css">
-    <title>Mon agence</title>
+    <link rel="stylesheet" href="CSS/flex.css">
+    <title>Profil</title>
 </head>
 <body>
     <header>
         <ul class="flex space-evenly">
-            <li class="menu"><a href="index.php">Home</a></li>
+        <li class="menu"><a href="index.php">Home</a></li>
             <li  class="menu"><a href="profil.php">Page profil</a></li>
-            <li class="menu"><a href="connexion.php">Connexion</a></li>
-            <li class="imageMenu"><a href="index.php"><ion-icon size="large" name="home-outline"></ion-icon></a></li>
-            <li class="imageMenu"><a href="profil.php"><ion-icon size="large" name="person-outline"></ion-icon></a></li>
+            <li  class="menu"><a href="connexion.php">Connexion</a></li>
+            <li class="imageMenu"><a href="index.html"><ion-icon size="large" name="home-outline"></ion-icon></a></li>
+            <li class="imageMenu"><a href="profil.html"><ion-icon size="large" name="person-outline"></ion-icon></a></li>
         </ul>
     </header>
     <main>
-        <?php
-            require_once "Controller.php";
-        ?>
+        <h1>Votre page profil</h1>
+        <ol>
+            <div>
+                <li>Nom</li>
+                <p>de Mahieu</p>
+            </div>
+            <div>
+                <li>Prénom</li>
+                <p>Benoit</p>
+            </div>
+            <div>
+                <li>Adresse postale</li>
+                <p>Place de la route, 5151 Anvers</p>
+            </div>
+            <div>
+                <li>Photo de profil</li>
+                <div class="progress">
+                    <div class="progress-bar"></div>
+                </div>
+                <img id="imageProfil" src="Images/profil.png" alt="Mon image de profil">
+            </div>
+        </ol>
     </main>
     <footer>
         <div class="flex space-between align-item-center">
